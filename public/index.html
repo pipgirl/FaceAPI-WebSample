@@ -1,0 +1,34 @@
+<html>
+<meta name="viewport" content="maximum-scale=1, user-scalable=no">
+<head>
+    <title>Super Smart Hashtag App</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--View full site at http://xxx.azurewebsites.net-->
+    
+    <div id="container">
+        <img src="https://cdn117.picsart.com/213689042000202.jpg" id="imageinput" class="img-rounded"> 
+        <p id="description"></p>
+          <p id="response">#balloon, #aircraft, #transport, #sky, #different, #colored, #several</p>   
+           <input type="url" placeholder="Paste a valid image URL" id="imgURL">
+           <button class="btnTag btn-default btn-sm" onclick="tagImage()">Tag Image</button>
+    <ul>
+           <li>JPEG, PNG, GIF(the first frame), and BMP are supported. The image file size should be larger than or equal to 1KB but no larger than 4MB.</li>
+    <li>The detectable face size is between 36x36 to 4096x4096 pixels. The faces out of this range will not be detected.</li>
+    <li>A maximum of 64 faces could be returned for an image. The returned faces are ranked by face rectangle size in descending order.</li>
+    <li>Some faces may not be detected for technical challenges, e.g. very large face angles (head-pose) or large occlusion. Frontal and near-frontal faces have the best results.</li>
+    <li>Attributes (age, gender, headPose, smile, facialHair, and glasses) are still experimental and may not be very accurate. HeadPose's pitch value is a reserved field and will always return 0.</li>
+</ul>
+    <div id="btmBar"><p>Powered by <img src="img/microsoftLogo.png" width="10%"> <a href="https://www.microsoft.com/cognitive-services">Cognitive Services</a>
+    <br> Access this sample and more on <a href="https://github.com/TED-Social/CognitiveServices-Samples">GitHub </a>
+    </p></div>
+    </div>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/intelligentapp.js"></script>
+
+</body>
+</html>
